@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <style type="text/css">
+    *{
+    	margin:0px;
+    	padding:0px;
+    }
+    </style>
+</head>
+<body>
+	<img id="ss" src="1.jpg" alt="">
+	<input  type="button" value="1">
+    <input  type="button" value="2">
+    <input id="abc"   type="button" value="3">
+    <input  type="button" value="4">
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+	$("#btn input").click(function(){
+		var ind = $(this).index();
+		var num =ind +1;
+		var src = num +".jpg";
+		$("#ss").atter("src",src);
+	})
+
+	</script>
+	
+</body>
+</html>
